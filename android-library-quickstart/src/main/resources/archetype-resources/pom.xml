@@ -2,6 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	    <groupId>${groupId}</groupId>
+	    <artifactId>parent</artifactId>
+	    <version>1.0.0</version>
+	</parent>
+	 
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
@@ -20,6 +26,7 @@
 			#elseif(${platform} == 10) 2.3.3
 			#elseif(${platform} == 14) 4.0.1.2
 			#elseif(${platform} == 16) 4.1.1.4
+			#elseif(${platform} == 20) 4.4W
 			#end
 		</platform.version>
 		<android.plugin.version>${android-plugin-version}</android.plugin.version>

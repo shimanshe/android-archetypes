@@ -6,16 +6,19 @@
 
   <requiredProperties>
     <requiredProperty key="platform">
-      <defaultValue>16</defaultValue>
+      <defaultValue>20</defaultValue>
     </requiredProperty>
     <requiredProperty key="android-plugin-version">
-      <defaultValue>3.8.2</defaultValue>
+      <defaultValue>3.9.0-rc.1</defaultValue>
+    </requiredProperty>
+	 <requiredProperty key="groupId">
+      <defaultValue>com.fanglz.android</defaultValue>
     </requiredProperty>
   </requiredProperties>
 
   <fileSets>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
-      <directory>src/main/java</directory>
+      <directory>src</directory>
       <includes>
         <include>**/*.java</include>
       </includes>
